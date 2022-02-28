@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
+
 <head>
  <meta charset="<?php bloginfo( 'charset' ); ?>">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,12 @@
 
  <?php wp_head(); ?>
 
+ <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/portfolio.css" type="text/css" media="screen" />
 </head>
 
 <body <?php body_class(); ?>>
- <div class="container">
+
+ <div class="container-fluid">
   <header>
    <?php 
 if ( function_exists( 'the_custom_logo' ) ) {
@@ -28,7 +31,6 @@ if ( function_exists( 'the_custom_logo' ) ) {
     </div>
    </nav>
   </header>
-
 
   <?php
 		wp_body_open();

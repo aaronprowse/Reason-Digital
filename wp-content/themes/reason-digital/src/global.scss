@@ -1,0 +1,93 @@
+@import 'colours';
+@font-face {
+    font-family: 'Open Sans';
+    src: url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+}
+
+
+/* Guide to break points for theme */
+
+$layout-breakpoint-small: 600px;
+$layout-breakpoint-medium: 768px;
+body {
+    margin: 0;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: $secondary-font;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+.container-fluid {
+    max-width: 1500px;
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-self-end {
+    align-self: flex-end !important;
+}
+
+.text-end {
+    text-align: right !important;
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+    .col-md-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .col-md-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+    .col-md-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+    .single-post {
+        background: linear-gradient( 90deg, $primary-bg-color 40%, $secondary-bg-color 40%);
+    }
+}
+
+@import 'header';
+@import 'content';
